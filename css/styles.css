@@ -563,6 +563,9 @@ ul {
 .address .list-item:not(:last-child) {
   margin-bottom: 9px;
 }
+.address-list {
+  width: 231px;
+}
 .location-link {
   color: var(--main-white-color);
 }
@@ -591,6 +594,7 @@ ul {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
+  color: var(--main-white-color);
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -721,6 +725,7 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 11px 12px 11px 40px;
+  height: 40px;
 }
 .form-field textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -750,6 +755,8 @@ textarea {
 }
 .form-checkbox {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 .visually-hidden {
   position: absolute !important;
@@ -763,12 +770,17 @@ textarea {
 }
 .policy-link {
   color: var(--accent-color);
+  margin-left: 2px;
 }
 .checkbox-label {
   display: flex;
   align-items: center;
 
   margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: var(--primary-letter-spacing);
 }
 .checkbox-label::before {
   content: '';
@@ -825,4 +837,8 @@ textarea {
 }
 .comment-area {
   transition: border-color var(--animation), outline var(--animation), box-shadow var(--animation);
+}
+.close-button,
+.submit-btn {
+  cursor: pointer;
 }
